@@ -1,4 +1,4 @@
-#include "qml-box2d/box2dplugin.h"
+#include "3rdparty/qml-box2d/box2dplugin.h"
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 

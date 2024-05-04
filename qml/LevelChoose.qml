@@ -33,19 +33,6 @@ Item {
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                     onClicked: stackView.push(Qt.resolvedUrl("CreateLevel.qml"))
                 }
-                Text {
-                    text: '
-                <html>
-                <body  dir="rtl">
-                <a href="https://telegram.me/joinchat/BY6MdD8zELnu-u4vy6mxvg">گروه برنامه نویسان فارسی کیوت</a>
-                <br />
-                <a href="https://iostream.ir/">مرجع برنامه نویسان ++C</a>
-                </body>
-                </html>'
-                    horizontalAlignment: Text.AlignHCenter
-                    onLinkActivated: Qt.openUrlExternally(link);
-
-                }
             }
         }
         Item{
