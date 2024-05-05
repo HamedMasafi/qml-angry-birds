@@ -1,10 +1,9 @@
-import QtQuick 2.7
-//import QtQuick.Controls 2.0
-import QtQuick.Controls 1.4// as QQC14
-import QtQuick.Layouts 1.0
-import QtQuick.Dialogs 1.2
-import Box2D 2.0
-import Tooska 1.0
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQuick.Dialogs
+import Box2D
+import AngryBirds
 import "data.js" as Data
 
 Item {

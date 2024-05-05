@@ -1,9 +1,9 @@
-import QtQuick 2.0
-import QtQuick.Controls 1.4
-import QtQuick.Extras 1.4
-import QtQuick.Layouts 1.1
-import QtQuick.Controls.Styles 1.4
-import Box2D 2.0
+import QtQuick
+import QtQuick.Controls
+// import QtQuick.Extras
+import QtQuick.Layouts
+// import QtQuick.Controls.Styles
+import Box2D
 
 Rectangle {
     id: root
@@ -56,8 +56,8 @@ Rectangle {
         }
         SpinBox{
             id: spinAngle
-            minimumValue: 0
-            maximumValue: 359
+            from: 0
+            to: 359
             onValueChanged: {
                 if(target !== null)
                     target.rotation = value
@@ -69,8 +69,8 @@ Rectangle {
         }
         SpinBox{
             id: spinDamage
-            minimumValue: 1
-            maximumValue: 300
+            from: 1
+            to: 300
             onValueChanged: {
                 if(target !== null)
                     target.damage = value

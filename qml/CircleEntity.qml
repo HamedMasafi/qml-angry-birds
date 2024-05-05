@@ -14,7 +14,7 @@ Entity {
         friction: 90;		//اصطکاک
         restitution: 0.2;		//بازتاب
 
-        onBeginContact: {
+        onBeginContact: (other) => {
             var totalX = body.linearVelocity.x - other.getBody().linearVelocity.x;
             var totalY = body.linearVelocity.y - other.getBody().linearVelocity.y;
 

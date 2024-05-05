@@ -72,7 +72,7 @@ Item {
         property int shadowX: Math.min(Math.max(pressPoint.x - 100, mouseX), pressPoint.x + 50)
         property int shadowY: Math.min(Math.max(pressPoint.y - 50, mouseY), pressPoint.y + 50)
         property int power: Math.max(pressPoint.x - shadowX, 0)
-        onPressed: {
+        onPressed: (mouse) => {
             if(target === null)
                 return
 

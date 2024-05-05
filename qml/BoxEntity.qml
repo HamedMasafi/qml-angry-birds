@@ -15,7 +15,7 @@ Entity {
         width: image.width
         height: image.height
 
-        onBeginContact: {
+        onBeginContact: (other) => {
             var totalX = body.linearVelocity.x - other.getBody().linearVelocity.x;
             var totalY = body.linearVelocity.y - other.getBody().linearVelocity.y;
 
